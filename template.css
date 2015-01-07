@@ -1,0 +1,290 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://themes.googleusercontent.com/static/fonts/oswald/v8/-g5pDUSRgvxvOl5u-a_WHw.woff) format('woff');
+}
+
+body {
+    font-family: 'Open Sans';
+    font-size: 11px;
+}
+
+.documento {
+    page-break-after: always;
+}
+
+
+h1 {
+    font-family: 'Oswald';
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+h1 .subtitulo {
+    text-transform: none;
+    font-size: 12px;   
+    margin-top: -4px;
+    font-family: 'Oswald';
+    font-size: 11px;   
+    margin-top: 5px; 
+}
+
+h1 .datos-instituto {
+  font-size: 10px;
+  font-family: 'Open Sans';
+  text-transform: none;  
+}
+
+h2 {
+    clear: both;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15pt !important;
+    padding: 20pt 0pt 0pt 0pt;   
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+h2 small {
+    display: block;
+    text-align: center;
+    font-size: 13pt;    
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Open Sans';
+    background-color: #EEE;
+    -webkit-print-color-adjust: exact;
+    padding: 6pt;
+    width: 50%;
+    margin: 0px auto 20px auto;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.imagen-logo {
+    width: 17%;
+}
+
+#calificaciones {
+    margin: 30pt auto 0pt auto;
+    width: 80%;
+}
+
+
+#calificaciones > div > span {
+    width: 28%;
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 5pt 0pt;
+    border-bottom: 0px solid #DDD;
+    margin: 1px;
+} 
+
+#calificaciones > div>:first-child {
+    width: 70%;
+} 
+
+
+#calificaciones > div {
+    clear: both;
+}
+
+#cabeceraCalificaciones span {
+    font-weight: bold;
+    font-family: 'Dosis';
+    text-transform: uppercase;
+    font-Å›ize: 17px;
+    border-bottom: 0px solid #CCC !important;
+}
+
+.parteInferior {
+    clear: both;
+    margin-top: 30pt;
+}
+
+.recortable-inferior {
+  font-style: italic;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 10px;
+}
+
+.cabecera-recortable {
+  border-top: 1px dashed #999;
+  padding-top: 20px;
+}
+
+.pie-recortable {
+  margin-top: 20px;
+}
+
+
+#fecha {
+    text-align: right;
+}
+
+#fecha p {
+    margin: 5px 0px;
+}
+
+#fecha >:last-child {
+    margin-top: 50px;
+}
+
+#zonaSello {
+    text-align: center;
+    font-size: 7pt;
+    margin-top: 20pt;
+}
+
+#zonaSello >:first-child {
+    padding-bottom: 5px;
+    border-bottom: dotted 1px #000;
+    margin-bottom: 0px;
+}
+
+#zonaSello >:last-child {
+    margin-top: 5px;
+}
+
+
+.descripcion {
+  font-style: italic;
+  border: 1px dotted #444;
+  padding: 1em; 
+}
+
+.superindice {  
+    text-transform: none;
+    font-size: 13px;
+    vertical-align: super;
+}
+
+/***********************
+ PARTES
+ ***********************/
+.titulo-numero-parte {
+  font-weight: bold;
+}
+
+.titulo-descripcion {
+  font-weight: bold;
+}
+
+.descripcion, .introduccionPartes {
+  text-align: justify;
+}
+
+
+/**********************
+ SANCIONES
+ **********************/
+.tabla-sancion {
+    margin: 30px 0px 60px 0px;
+}
+
+.tabla-sancion td {
+    padding: 20px 20px 60px 20px;
+}
+
+
+
+/******************************************
+ SANCIONES BIBLIOTECA AULA CONVIVENCIA
+ ******************************************/
+.documento-biblioaulaconv .tabla-sancion {
+    width: 100%;
+}
+
+.documento-biblioaulaconv .tabla-sancion td {
+    padding: 20px 20px 0px 20px;;
+}
+
+.documento-biblioaulaconv h2 {
+    padding-top: 30px;
+}
+
+.documento-biblioaulaconv .parteInferior {
+    padding-top: 10px;
+}
+
+
+/******************************************
+ INFORME COMPLETO
+ ******************************************/
+.conjuntoPartes {
+    margin: 0px 0px 30px 25px;
+}
+
+.conjuntoAmonestaciones {
+    margin: 0px 0px 30px 25px;
+}
+
+span.profesor {
+    font-style: italic;
+}
+
+.destacado {
+   font-weight: bold;
+}
+
+.conjuntoPartes p {
+    margin: 0px 0px 5px 0px;
+}
+
+.conjuntoAmonestaciones p {
+    margin: 0px 0px 5px 0px;
+}
+
+.amonestacion, .parte {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
