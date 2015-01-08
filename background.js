@@ -5,8 +5,8 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
         case "creaSancion":
             creaSancion();
 		break;
-		case "on":
-	    	togglestorage("on");
+		case "creaAmonestacion":
+	    	creaAmonestacion();
 		break;
 	    case "off":
 			togglestorage("off");
@@ -20,10 +20,13 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
 
 
 var creaSancion = function() {
-
 	chrome.tabs.query({active: true}, function(tabs) {
 		chrome.tabs.sendMessage(tabs[0].id, {type: "creaSancion"});
 	});
+}
 
-
+var creaAmonestacion = function() {
+	chrome.tabs.query({active: true}, function(tabs) {
+		chrome.tabs.sendMessage(tabs[0].id, {type: "creaAmonestacion"});
+	});
 }

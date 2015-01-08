@@ -6,9 +6,9 @@ window.onload = function() {
         });
     }
 
-	document.getElementById("on").onclick = function() {
+	document.getElementById("creaAmonestacion").onclick = function() {
 		chrome.extension.sendMessage({
-            type: "on"
+            type: "creaAmonestacion"
         });
 	}
 
