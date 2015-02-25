@@ -142,7 +142,7 @@ h3 {
     margin: 5px 0px;
 }
 
-#fecha >:last-child {
+#fecha p.firmado {
     margin-top: 50px;
 }
 
@@ -255,6 +255,10 @@ span.profesor {
     margin-bottom: 10px;
 }
 
+p.small {
+  font-size: 8px;
+  margin-top: -10px !important;
+}
 
 
 

@@ -6,6 +6,8 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 		case "creaSancion":
 
 			var alumno = $("table tr:eq(2) td:eq(1)").text();	
+
+			var id = $("table tr:eq(0) td:eq(1)").text();	
 			
 			var descripcionSancion = $("table tr:eq(6) td:eq(1)").text();
 
@@ -36,7 +38,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 			html    += '</h1>';
 
 			html    += '<h2>';
-			html    += '<span>SANCIÓN</span>';
+			html    += '<span>SANCIÓN</span>';		
 			html    += '</h2>';
 
 			html    += '<h3>' + alumno + '</h3>';
@@ -51,13 +53,14 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 			html    += '<div class="parteInferior">';
 			html    += '<div id="fecha">';
 			html    += '<p>En Villabalter, a ' + today + '</p>';
-			html    += '<p>Fdo. Jefatura de Estudios</p>';
+			html    += '<p class="firmado">Fdo. Jefatura de Estudios</p>';
+			html    += '<p class="small">' + id + '</p>';			
 			html    += '</div>';
 			html    += '</div>';
 
 			html    += '<div class="recortable-inferior">';
 			html    += '<div class="cabecera-recortable">';
-			html    += 'D/Dª ….................................................................................................................................. padre/madre del alumno ' + alumno + ', manifiesta haber recibido la comunicación de la sanción impuesta a su hijo/a en fecha ' + today + ' y acepta el cumplimiento de la misma.';
+			html    += 'D/Dª ….................................................................................................................................. padre/madre del alumno ' + alumno + ', manifiesta haber recibido la comunicación de la sanción con identificador \'' + id + '\' impuesta a su hijo/a en fecha ' + today + ' y acepta el cumplimiento de la misma.';
 			html    += '</div>';
 			html    += '<div class="pie-recortable">';
 			html    += '<p>En …..............................................., a ….......... de …...................................... de …..................</p>';
