@@ -8,8 +8,18 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 			var alumno = $("table tr:eq(2) td:eq(1)").text();	
 
 			var id = $("table tr:eq(0) td:eq(1)").text();	
+
+			var fechas = $("table tr:eq(4) td:eq(0)").text();
+
+			var descripcionSancion = $("table tr:eq(5) td:eq(1)").text();
+
+			var descripcionHechosMotivanSancion = $("table tr:eq(6) td:eq(1)").text();			
+
+			if (fechas.indexOf("Fechas") > -1) {
+				descripcionSancion = $("table tr:eq(6) td:eq(1)").text();
+				descripcionHechosMotivanSancion = $("table tr:eq(7) td:eq(1)").text();				
+			}
 			
-			var descripcionSancion = $("table tr:eq(6) td:eq(1)").text();
 
 			var today = new Date();
 			var dd = today.getDate();
@@ -43,12 +53,16 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 
 			html    += '<h3>' + alumno + '</h3>';
 
-			html    += '<div class="introduccion-parte">';
+			html    += '<div class="introduccion-parte">';		
 			html    += '<p>La Jefatura de Estudios del IES San Andrés, por Delegación de la Directora, en cumplimiento del Decreto 51/2007 de 17 de mayo de 2007, por el que se regulan los derechos y deberes de los alumnos y se establecen las normas de convivencia en los Centros Educativos de Castilla y León y al Decreto 23/2014, de 12 de junio, por el que se establece el marco del gobierno y autonomía de los centros docentes, impone la sanción que se indica a continuación al alumno/a ' + alumno + ':</p>';
 			html    += '</div>';
 
-			html    += '<div class="titulo-descripcion">Descripción de los hechos</div>';
+			html    += '<div class="titulo-descripcion">Descripción de la sanción</div>';
 			html    += '<div class="descripcion">' + descripcionSancion + '</div>';
+
+			html    += '<p>Se detalla a continuación el hecho que motiva la sanción:</p>';			
+			html    += '<div class="titulo-descripcion">Descripción de los hechos que motivan la sanción</div>';
+			html    += '<div class="descripcion">' + descripcionHechosMotivanSancion + '</div>';			
 
 			html    += '<div class="parteInferior">';
 			html    += '<div id="fecha">';
@@ -60,11 +74,7 @@ chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 
 			html    += '<div class="recortable-inferior">';
 			html    += '<div class="cabecera-recortable">';
-			html    += 'D/Dª ….................................................................................................................................. padre/madre del alumno ' + alumno + ', manifiesta haber recibido la comunicación de la sanción con identificador \'' + id + '\' impuesta a su hijo/a en fecha ' + today + ' y acepta el cumplimiento de la misma.';
-			html    += '</div>';
-			html    += '<div class="pie-recortable">';
-			html    += '<p>En …..............................................., a ….......... de …...................................... de …..................</p>';
-			html    += '<p>Firma del padre/madre:</p>';
+			html    += 'D/Dª ….................................................................................................................................. padre/madre del alumno ' + alumno + ', manifiesta haber recibido la comunicación de la sanción con identificador \'' + id + '\' impuesta a su hijo/a en fecha ' + today + ' y acepta el cumplimiento de la misma para lo que firma a continuación en fecha ............................................................................:';
 			html    += '</div>';
 			html    += '</div>';
 			html    += '</div>';

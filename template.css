@@ -52,7 +52,7 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     font-size: 15pt !important;
-    padding: 20pt 0pt 0pt 0pt;   
+    padding: 10pt 0pt 0pt 0pt;   
     font-weight: normal;
     margin-bottom: 10px;
 }
@@ -114,7 +114,7 @@ h3 {
 
 .parteInferior {
     clear: both;
-    margin-top: 30pt;
+    margin-top: 15pt;
 }
 
 .recortable-inferior {
