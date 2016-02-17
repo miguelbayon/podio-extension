@@ -5,6 +5,9 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
         case "creaSancion":
             creaSancion();
 		break;
+    case "creaSancionConFirma":
+        creaSancionConFirma();
+        break;
 		case "creaAmonestacion":
 	    	creaAmonestacion();
 		break;
@@ -22,6 +25,12 @@ chrome.extension.onMessage.addListener(function(request, sender, sendResponse) {
 var creaSancion = function() {
 	chrome.tabs.query({active: true}, function(tabs) {
 		chrome.tabs.sendMessage(tabs[0].id, {type: "creaSancion"});
+	});
+}
+
+var creaSancionConFirma = function() {
+	chrome.tabs.query({active: true}, function(tabs) {
+		chrome.tabs.sendMessage(tabs[0].id, {type: "creaSancionConFirma"});
 	});
 }
 

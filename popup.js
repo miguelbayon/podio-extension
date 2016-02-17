@@ -12,6 +12,12 @@ window.onload = function() {
         });
 	}
 
+  document.getElementById("creaSancionConFirma").onclick = function() {
+		chrome.extension.sendMessage({
+            type: "creaSancionConFirma"
+        });
+	}
+
 	document.getElementById("off").onclick = function() {
 		chrome.extension.sendMessage({
             type: "off"

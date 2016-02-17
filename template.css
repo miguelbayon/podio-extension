@@ -33,17 +33,17 @@ h1 {
 
 h1 .subtitulo {
     text-transform: none;
-    font-size: 12px;   
+    font-size: 12px;
     margin-top: -4px;
     font-family: 'Oswald';
-    font-size: 11px;   
-    margin-top: 5px; 
+    font-size: 11px;
+    margin-top: 5px;
 }
 
 h1 .datos-instituto {
   font-size: 10px;
   font-family: 'Open Sans';
-  text-transform: none;  
+  text-transform: none;
 }
 
 h2 {
@@ -52,7 +52,7 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     font-size: 15pt !important;
-    padding: 10pt 0pt 0pt 0pt;   
+    padding: 10pt 0pt 0pt 0pt;
     font-weight: normal;
     margin-bottom: 10px;
 }
@@ -60,7 +60,7 @@ h2 {
 h2 small {
     display: block;
     text-align: center;
-    font-size: 13pt;    
+    font-size: 13pt;
 }
 
 h3 {
@@ -93,11 +93,11 @@ h3 {
     padding: 5pt 0pt;
     border-bottom: 0px solid #DDD;
     margin: 1px;
-} 
+}
 
 #calificaciones > div>:first-child {
     width: 70%;
-} 
+}
 
 
 #calificaciones > div {
@@ -143,7 +143,7 @@ h3 {
 }
 
 #fecha p.firmado {
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 #zonaSello {
@@ -166,10 +166,10 @@ h3 {
 .descripcion {
   font-style: italic;
   border: 1px dotted #444;
-  padding: 1em; 
+  padding: 1em;
 }
 
-.superindice {  
+.superindice {
     text-transform: none;
     font-size: 13px;
     vertical-align: super;
@@ -259,36 +259,3 @@ p.small {
   font-size: 8px;
   margin-top: -10px !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
